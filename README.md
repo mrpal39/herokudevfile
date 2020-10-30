@@ -15,7 +15,7 @@ git branch -M main
 
 
 
-git remote add origin git@github.com:mrpal39/heroku.git
+git remote add origin git@github.com:mrpal39/herokudevfile.git
 
 git push -u origin main
                 
