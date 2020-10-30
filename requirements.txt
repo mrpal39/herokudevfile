@@ -43,6 +43,7 @@ coreapi==2.3.3
 coreschema==0.0.4
 cryptography==2.8
 cupshelpers==1.0
+django-crispy-forms=1.9.2
 daphne==2.5.0
 dbus-python==1.2.16
 decorator==4.4.2
@@ -175,6 +176,7 @@ packaging==20.4
 pandocfilters==1.4.3
 paramiko==2.6.0
 parso==0.7.1
+pillow==8.0.1
 passlib==1.7.2
 pathtools==0.1.2
 pexpect==4.6.0
@@ -289,4 +291,3 @@ xkit==0.0.0
 zipp==1.0.0
 zope.event==4.5.0
 zope.interface==5.1.2
-django-crispy-forms=1.9.2
