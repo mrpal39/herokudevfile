@@ -30,8 +30,10 @@ ALLOWED_HOSTS = ['deploydjangotest.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'crispy_forms',
 
     'blog.apps.BlogConfig',
+    'users.apps.UsersConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -56,7 +58,7 @@ ROOT_URLCONF = 'dev.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'blog/templates'],
+        'DIRS': [BASE_DIR / 'templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,8 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 
-STATIC_ROOT = (BASE_DIR, 'blog/staticfiles')
+STATIC_ROOT = (BASE_DIR, 'staticfiles')
 STATIC_URL = 'blog/static/'
 
 MEDIA_ROOT = (BASE_DIR, 'media')
 MEDIA_URL = 'media/'
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
